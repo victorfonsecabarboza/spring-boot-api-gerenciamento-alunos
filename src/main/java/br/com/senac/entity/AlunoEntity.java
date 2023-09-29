@@ -4,12 +4,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 //Definição da classe como uma entidade
 @Entity
 //Gera getters e setters para todos os campos
 @Data
+//Gera um construtor com todos os argumentos.
+@AllArgsConstructor
 public class AlunoEntity {
 
 //	Especifica a chave primária de uma entidade (private Integer id).
